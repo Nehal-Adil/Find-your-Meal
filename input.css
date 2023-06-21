@@ -3,16 +3,23 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* Variables */
+
 body {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(
+  /* background: linear-gradient(
     45deg,
     rgba(46, 54, 61, 1) 28%,
     rgba(83, 142, 201, 1) 77%
-  );
+  ); */
+  background-color: grey;
   background-blend-mode: normal;
   color: white;
+}
+
+#nav {
+  background-color: #bca000;
 }
 
 /* Heading */
@@ -32,8 +39,49 @@ body {
   height: 50px;
   border: none;
   font-size: 2rem;
-  color: white;
 }
 #search-bar img {
   width: 40px;
+}
+
+/* Meal card */
+
+#card {
+  background-color: #bca000;
+  padding: 10px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Meal details container */
+
+#meal-details {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #bca000;
+}
+
+#meal-header {
+  width: 70%;
+  margin: auto;
+}
+
+#meal-thumbail img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+#details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+}
+
+#meal-instruction {
+  margin: auto;
+  text-align: center;
 }
