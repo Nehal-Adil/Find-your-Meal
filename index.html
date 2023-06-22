@@ -30,6 +30,7 @@
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasNavbar"
               aria-controls="offcanvasNavbar"
+              onclick="showFavMealList()"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -73,17 +74,21 @@
         </div>
 
         <!-- Search Bar -->
-        <div id="search-bar" class="container text-center mt-5 d-flex">
+        <div
+          id="search-bar"
+          class="container text-center mt-5 d-flex"
+          onkeyup="showMealList()"
+        >
           <input
             type="search"
             id="my-search"
             class="form-control"
             placeholder="Search.."
-            onclick="showMealList()"
           />
           <img
             src="https://cdn-icons-png.flaticon.com/128/9632/9632046.png"
             alt="search"
+            id="search-icon"
           />
         </div>
         <div id="heading-text" class="mt-3 text-center">
