@@ -106,7 +106,7 @@ async function showMealDetails(id) {
   document.getElementById("main").innerHTML = html;
 }
 
-// it shows all favourites meals in favourites body
+// it shows all favourites meals in favourites section
 async function showFavMealList() {
   let arr = JSON.parse(localStorage.getItem("favouritesList"));
   let url = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=";

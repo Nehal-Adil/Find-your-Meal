@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap");
+
 /* CSS Reset */
 * {
   margin: 0;
@@ -7,6 +9,8 @@
 /* Variables */
 :root {
   --clr-gold: #bca000;
+  --clr-primary-1: #ff6107;
+  --clr-primar-2: #212529;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --card-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
@@ -15,19 +19,28 @@
 body {
   width: 100%;
   height: 100vh;
+  font-family: "Poppins", sans-serif;
   /* background: linear-gradient(
     45deg,
     rgba(46, 54, 61, 1) 28%,
     rgba(83, 142, 201, 1) 77%
   ); */
-  background-color: grey;
+  background-color: var(--clr-primar-2);
   background-blend-mode: normal;
   color: white;
 }
 
+/* Nav */
 #nav {
-  background-color: var(--clr-gold);
+  background-color: var(--clr-primary-1);
   box-shadow: var(--light-shadow);
+  font-family: "Lobster", cursive;
+}
+
+#nav a {
+  font-size: 2rem;
+  letter-spacing: 0.15cm;
+  font-weight: 700;
 }
 
 /* Heading */
@@ -59,19 +72,18 @@ body {
 /* Meal card */
 
 #card {
-  background-color: var(--clr-gold);
+  background-color: var(--clr-primary-1);
   padding: 10px;
   color: white;
   box-shadow: var(--card-shadow);
 }
 
 /* Meal details container */
-
 #meal-details {
   width: 100%;
   padding: 20px;
   border-radius: 20px;
-  background-color: var(--clr-gold);
+  background-color: var(--clr-primary-1);
 }
 
 #meal-header {
@@ -98,6 +110,11 @@ body {
   text-align: center;
 }
 
+/* Favourite Section */
 .offcanvas-header {
-  background-color: var(--clr-gold);
+  background-color: var(--clr-primary-1);
+}
+
+.offcanvas-end {
+  background-color: var(--clr-primar-2);
 }
